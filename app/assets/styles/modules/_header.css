@@ -1,0 +1,17 @@
+.header {
+    position: relative;
+}
+
+.header__logo img {
+    z-index: 1;    
+}
+
+.header__title {
+    color: red;
+    position: absolute;
+    font-size: 4rem;
+    top: 40px;
+    right: 25rem;
+    z-index: 2;
+    font-family: 'Permanent Marker', cursive;
+}
