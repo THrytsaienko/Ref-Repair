@@ -1,17 +1,72 @@
 .header {
     position: relative;
+    overflow: hidden;
 }
 
 .header__logo img {
-    z-index: 1;    
+    z-index: 1;
 }
 
 .header__title {
-    color: red;
+    color: #04099E;
+    font-weight: 600;
     position: absolute;
-    font-size: 4rem;
-    top: 40px;
-    right: 25rem;
+    font-size: 1.4rem;
+    top: 50px;
+    margin-left: 5%;
+    width: 55%;
     z-index: 2;
     font-family: 'Permanent Marker', cursive;
+    @mixin atSmall {
+        font-weight: 600;
+        font-size: 1.5rem;
+        top: 50px;
+        width: 50%;
+    }
+    @mixin atMedium {
+        font-weight: 600;
+        font-size: 1.8rem;
+        top: 60px;
+        margin-left: 5%;
+        width: 50%;
+    }
+    @mixin atLarge {
+        font-size: 3rem;
+        top: 80px;
+        width: auto;
+        color: red;
+        font-weight: 400;
+        right: 5%;
+        float: right;
+    }
+}
+
+.header__phone__flex-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__phone__flex-item {
+    list-style: none;
+    font-size: 1rem;
+    padding-top: 5px;
+    color: #04099E;
+    font-family: 'Itim', cursive;
+    font-weight: 600;
+    margin-bottom: 5px;
+    @mixin atSmall {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+    @mixin atMedium {
+        font-size: 1.2rem;
+        margin-bottom: 3px;
+    }
+    @mixin atLarge {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+    & img {
+        width: 1em;
+    }
 }

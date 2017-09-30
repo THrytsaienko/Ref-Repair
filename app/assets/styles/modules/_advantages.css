@@ -1,0 +1,38 @@
+.advantages {
+    color: #E0DEDE;
+    padding: 2% 0 2% 0;
+    @mixin atLarge {}
+    &__title {
+        font-size: 1.4rem;
+        @mixin atSmall {
+            font-size: 1.5rem;
+        }
+        @mixin atMedium {
+            font-size: 1.8rem;
+        }
+        @mixin atLarge {
+        font-size: 2.5rem;
+        }
+    }
+    &__item {
+        list-style: none;
+        font-size: 1rem;
+        line-height: 2rem;
+        @mixin atSmall {
+            font-size: 1.1rem;
+            line-height: 2.2rem;
+        }
+        @mixin atMedium {
+            font-size: 1.3rem;
+            line-height: 2.4rem;
+        }
+        @mixin atLarge {
+            font-size: 1.6rem;
+            line-height: 2.7rem;
+        }
+        & img {
+                width: 1.1em;
+                margin-right: 5px;
+            }
+        }
+    }

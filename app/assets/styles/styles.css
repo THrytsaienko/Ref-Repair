@@ -1,3 +1,9 @@
 @import "normalize.css";
 @import "base/_global";
+@import "base/_mixins";
 @import "modules/_header";
+@import "modules/_footer";
+@import "modules/_problems";
+@import "modules/_advantages";
+@import "modules/_wrapper";
+@import "modules/_ref-models";
