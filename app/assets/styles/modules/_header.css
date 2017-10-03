@@ -11,7 +11,7 @@
     color: #04099E;
     font-weight: 600;
     position: absolute;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     top: 50px;
     margin-left: 5%;
     width: 55%;
@@ -31,13 +31,21 @@
         width: 50%;
     }
     @mixin atLarge {
-        font-size: 3rem;
+        font-size: 2.7rem;
         top: 80px;
         width: auto;
         color: red;
         font-weight: 400;
         right: 5%;
         float: right;
+    }
+}
+
+.header__phone {
+    opacity: 0;
+    animation-duration: 2s;
+    &.animated {
+        opacity: 1;
     }
 }
 
@@ -48,7 +56,7 @@
 
 .header__phone__flex-item {
     list-style: none;
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding-top: 5px;
     color: #04099E;
     font-family: 'Itim', cursive;
