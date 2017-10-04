@@ -1,34 +1,34 @@
 .advantages {
     color: #E0DEDE;
     padding: 2% 0 2% 0;
-    @mixin atLarge {}
     &__title {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
+        margin-bottom: 1%;
         @mixin atSmall {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
         }
         @mixin atMedium {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
         }
         @mixin atLarge {
-            font-size: 2.5rem;
+            font-size: 2.1rem;
         }
     }
     &__item {
         list-style: none;
-        font-size: 1rem;
-        line-height: 2rem;
+        font-size: 0.8rem;
+        line-height: 1.7rem;
         @mixin atSmall {
-            font-size: 1.1rem;
-            line-height: 2.2rem;
+            font-size: 1rem;
+            line-height: 2rem;
         }
         @mixin atMedium {
-            font-size: 1.3rem;
-            line-height: 2.4rem;
+            font-size: 1.1rem;
+            line-height: 2.1rem;
         }
         @mixin atLarge {
-            font-size: 1.6rem;
-            line-height: 2.7rem;
+            font-size: 1.4rem;
+            line-height: 2.6rem;
         }
         & img {
             width: 1.1em;
@@ -37,7 +37,7 @@
     }
     &__description {
         opacity: 0;
-        animation-duration: 2s;
+        animation-duration: 1s;
         &.animated {
             opacity: 1;
         }

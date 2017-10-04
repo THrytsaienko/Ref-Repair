@@ -620,14 +620,14 @@ picture {
 
 .problems__description {
         opacity: 0;
-        -webkit-animation-duration: 1s;
-                animation-duration: 1s;
-        top: 20%;
+        -webkit-animation-duration: 3s;
+                animation-duration: 3s;
+        top: 5%;
         /* top: 50%;
         transform: translateY(-50%); Doesn`t work with Animation.css*/
         position: absolute;
         text-align: center;
-        font-size: .9rem;
+        font-size: .8rem;
         line-height: 1.3rem;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -638,7 +638,7 @@ picture {
                 flex-direction: row;
         z-index: 2;
         color: #ffffff;
-        max-width: 95%;
+        width: 95%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -646,6 +646,7 @@ picture {
 @media (min-width: 640px) {
 
 .problems__description {
+            top: 5%;
             font-size: 1rem;
             line-height: 1.3rem
     }
@@ -654,14 +655,16 @@ picture {
 @media (min-width: 768px) {
 
 .problems__description {
+            top: 5%;
             font-size: 1.1rem;
-            line-height: 2.5rem
+            line-height: 1.7rem
     }
     }
 
 @media (min-width: 1024px) {
 
 .problems__description {
+            top: 10%;
             font-size: 1.8rem;
             line-height: 2.5rem
     }
@@ -679,11 +682,15 @@ picture {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        left: 30%;
-        width: 90%;
+        -webkit-box-flex: 4;
+            -ms-flex: 4;
+                flex: 4;
+        /* left: 30%; */
+        /* width: 100%; */
         margin-left: auto;
         margin-right: auto;
         list-style: none;
+        margin: auto 2% auto 3%;
     }
 
 .problems__block__item {
@@ -695,11 +702,17 @@ picture {
         }
 
 .problems__block__title {
-            margin: auto 0 auto 3%;
+            margin: auto 1% auto 3%;
+            -webkit-box-flex: 3;
+                -ms-flex: 3;
+                    flex: 3;
         }
 
 .problems__block-2 {
             margin: auto 0;
+            -webkit-box-flex: 4;
+                -ms-flex: 4;
+                    flex: 4;
         }
 
 .problems__collage {
@@ -713,61 +726,59 @@ picture {
     padding: 2% 0 2% 0;
 }
 
-@media (min-width: 1024px) {
-    }
-
 .advantages__title {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
+        margin-bottom: 1%;
     }
 
 @media (min-width: 640px) {
 
 .advantages__title {
-            font-size: 1.5rem
+            font-size: 1.4rem
     }
     }
 
 @media (min-width: 768px) {
 
 .advantages__title {
-            font-size: 1.8rem
+            font-size: 1.6rem
     }
     }
 
 @media (min-width: 1024px) {
 
 .advantages__title {
-            font-size: 2.5rem
+            font-size: 2.1rem
     }
     }
 
 .advantages__item {
         list-style: none;
-        font-size: 1rem;
-        line-height: 2rem;
+        font-size: 0.8rem;
+        line-height: 1.7rem;
     }
 
 @media (min-width: 640px) {
 
 .advantages__item {
-            font-size: 1.1rem;
-            line-height: 2.2rem
+            font-size: 1rem;
+            line-height: 2rem
     }
     }
 
 @media (min-width: 768px) {
 
 .advantages__item {
-            font-size: 1.3rem;
-            line-height: 2.4rem
+            font-size: 1.1rem;
+            line-height: 2.1rem
     }
     }
 
 @media (min-width: 1024px) {
 
 .advantages__item {
-            font-size: 1.6rem;
-            line-height: 2.7rem
+            font-size: 1.4rem;
+            line-height: 2.6rem
     }
     }
 
@@ -778,8 +789,8 @@ picture {
 
 .advantages__description {
         opacity: 0;
-        -webkit-animation-duration: 2s;
-                animation-duration: 2s;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
     }
 
 .advantages__description.animated {
@@ -810,13 +821,20 @@ picture {
         text-align: center;
         padding-top: 15px;
         padding-bottom: 10px;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+@media (min-width: 768px) {
+
+.ref-models__title {
+            font-size: 1.6rem
+    }
     }
 
 @media (min-width: 1024px) {
 
 .ref-models__title {
-            font-size: 2.5rem
+            font-size: 2.3rem
     }
     }
 
@@ -828,7 +846,14 @@ picture {
             flex-wrap: wrap;
         -ms-flex-pack: distribute;
             justify-content: space-around;
+        opacity: 0;
+        -webkit-animation-duration: 3s;
+                animation-duration: 3s;
     }
+
+.ref-models__list.animated {
+            opacity: 1;
+        }
 
 .ref-models__list__item {
             margin: 0 2% 0 2%;

@@ -7,12 +7,9 @@ class RevealOnScroll {
         this.itemsAdvantages = $('.advantages__description');
         this.itemsModels = $('.ref-models__list');
         this.itemsProblems = $('.problems__description');
-        this.hideInitially();
         this.createWaypoints();
     }
-    hideInitially() {
-        this.itemsModels.addClass('reveal-item');
-    }
+    
     createWaypoints() {
         var correctThis = this;
         this.itemsPhoneNumbers.each(function () {
@@ -39,7 +36,7 @@ class RevealOnScroll {
             new Waypoint({
                 element: currentItem,
                 handler: function () {
-                    $(currentItem).addClass('reveal-item--is-visible');
+                    $(currentItem).addClass('animated zoomIn');
                 },
                 offset: '85%'
             });
@@ -51,7 +48,7 @@ class RevealOnScroll {
                 handler: function () {
                     $(currentItem).addClass('animated bounceInLeft');
                 },
-                offset: '50%'
+                offset: '85%'
             });
         });
     }
