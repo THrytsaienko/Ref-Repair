@@ -8,7 +8,7 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync').create();
 
 
-gulp.task('previewDist', function(){
+gulp.task('previewDist', function () {
     browserSync.init({
         notify: false,
         server: {
@@ -17,11 +17,11 @@ gulp.task('previewDist', function(){
     });
 });
 
-gulp.task('deleteDistFolder', ['icons'], function () {
+gulp.task('deleteDistFolder', function () {
     return del("./docs");
 });
 
-gulp.task('copyGeneralFiles', ['deleteDistFolder'], function(){
+gulp.task('copyGeneralFiles', ['deleteDistFolder'], function () {
     var pathsToCopy = [
         './app/**/*',
         '!./app/index.html',
@@ -32,11 +32,11 @@ gulp.task('copyGeneralFiles', ['deleteDistFolder'], function(){
         '!./app/temp/**'
     ]
     return gulp.src(pathsToCopy)
-    .pipe(gulp.dest("./docs"));
+        .pipe(gulp.dest("./docs"));
 });
 
 gulp.task('optimizeImages', ['deleteDistFolder'], function () {
-    return gulp.src(['./app/assets/images/**/*', '!./app/assets/images/icons', '!./app/assets/images/icons/**/*'])
+    return gulp.src('./app/assets/images/**/*')
         .pipe(imagemin({
             progressive: true,
             interlaced: true,
@@ -45,15 +45,23 @@ gulp.task('optimizeImages', ['deleteDistFolder'], function () {
         .pipe(gulp.dest("./docs/assets/images"));
 });
 
-gulp.task('useminTrigger', ['deleteDistFolder'], function(){
+gulp.task('useminTrigger', ['deleteDistFolder'], function () {
     gulp.start("usemin");
 });
 
 gulp.task('usemin', ['styles', 'scripts'], function () {
     return gulp.src("./app/index.html")
         .pipe(usemin({
-            css: [function(){return rev()}, function(){return cssnano()}],
-            js: [function () { return rev() }, function () { return uglify() }]
+            css: [function () {
+                return rev()
+            }, function () {
+                return cssnano()
+            }],
+            js: [function () {
+                return rev()
+            }, function () {
+                return uglify()
+            }]
         }))
         .pipe(gulp.dest("./docs"));
 });
