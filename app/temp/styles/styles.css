@@ -622,13 +622,13 @@ picture {
         opacity: 0;
         -webkit-animation-duration: 3s;
                 animation-duration: 3s;
-        top: 5%;
+        top: 4%;
         /* top: 50%;
         transform: translateY(-50%); Doesn`t work with Animation.css*/
         position: absolute;
         text-align: center;
         font-size: .7rem;
-        line-height: .85rem;
+        line-height: .8rem;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -648,7 +648,7 @@ picture {
 .problems__description {
             top: 5%;
             font-size: 1rem;
-            line-height: 1.3rem
+            line-height: 1.2rem
     }
     }
 
@@ -657,16 +657,15 @@ picture {
 .problems__description {
             top: 5%;
             font-size: 1.1rem;
-            line-height: 1.7rem
+            line-height: 1.4rem
     }
     }
 
 @media (min-width: 1024px) {
 
 .problems__description {
-            top: 10%;
-            font-size: 1.8rem;
-            line-height: 2.5rem
+            font-size: 1.4rem;
+            line-height: 2rem
     }
     }
 
