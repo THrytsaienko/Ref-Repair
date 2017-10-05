@@ -499,8 +499,8 @@ picture {
         color: #04099E;
         font-weight: 600;
         position: absolute;
-        font-size: 1.3rem;
-        top: 50px;
+        font-size: 1.2rem;
+        top: 40px;
         margin-left: 5%;
         width: 55%;
         z-index: 2;
@@ -561,7 +561,7 @@ picture {
 
 .header__phone__flex-item {
             list-style: none;
-            font-size: 0.9rem;
+            font-size: 0.7rem;
             padding-top: 5px;
             color: #04099E;
             font-family: 'Itim', cursive;
@@ -627,8 +627,8 @@ picture {
         transform: translateY(-50%); Doesn`t work with Animation.css*/
         position: absolute;
         text-align: center;
-        font-size: .8rem;
-        line-height: 1.3rem;
+        font-size: .7rem;
+        line-height: .85rem;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -638,7 +638,7 @@ picture {
                 flex-direction: row;
         z-index: 2;
         color: #ffffff;
-        width: 95%;
+        width: 99%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -685,8 +685,6 @@ picture {
         -webkit-box-flex: 4;
             -ms-flex: 4;
                 flex: 4;
-        /* left: 30%; */
-        /* width: 100%; */
         margin-left: auto;
         margin-right: auto;
         list-style: none;
@@ -702,7 +700,7 @@ picture {
         }
 
 .problems__block__title {
-            margin: auto 1% auto 3%;
+            margin: auto 0 auto 3%;
             -webkit-box-flex: 3;
                 -ms-flex: 3;
                     flex: 3;
@@ -713,6 +711,7 @@ picture {
             -webkit-box-flex: 4;
                 -ms-flex: 4;
                     flex: 4;
+            margin: auto 2% auto 0;
         }
 
 .problems__collage {
