@@ -5,7 +5,8 @@
         z-index: 1;
     }
     &__title {
-        color: #04099E;
+        color: rgb(230, 20, 20);
+        /* color: #000; */
         font-weight: 600;
         position: absolute;
         font-size: 1.2rem;
@@ -31,7 +32,6 @@
             font-size: 2.7rem;
             top: 80px;
             width: auto;
-            color: red;
             font-weight: 400;
             right: 5%;
             float: right;
